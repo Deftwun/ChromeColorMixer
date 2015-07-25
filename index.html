@@ -38,17 +38,20 @@
         var hexButton = document.getElementById("hexButton");
 
         rgbButton.onclick=function(){
-          copyStr = rg
+          copyStr = rgbStr;
+          document.execCommand('copy');
           console.log("rgbClick");
           console.log(rgbStr);
         }
         hexButton.onclick=function(){
           copyStr = hexStr;
+          document.execCommand('copy');
           console.log("hexClick");
           console.log(hexStr);
         }
         hsvButton.onclick=function(){
           copyStr = hsvStr;
+          document.execCommand('copy');
           console.log("hsvClick");
           console.log(hsvStr);
         }
