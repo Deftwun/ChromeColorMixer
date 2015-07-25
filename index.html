@@ -1,0 +1,63 @@
+<html>
+  <head>
+    <script type="text/javascript" src="colorpicker.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="themes.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+
+    <div id="color-picker" class="cp-default"></div>
+    <div id="buttons">
+      <button id="rgbButton" type="button">Copy RGB</button>
+      <button id="hexButton" type="button">Copy HEX</button>
+      <button id="hsvButton" type="button">Copy HSV</button>
+    </div>
+
+    <div id=checkBox>
+      <input id="stayOnTopCheck" type="checkbox">Stay on top</input>
+    </div>
+
+    <script type="text/javascript">
+
+      var rgbStr="rgb(255,255,255)",
+          hexStr = "#FFFFFF",
+          hsvStr = "hsv(360,0,100)",
+          copyStr = "";
+
+      ColorPicker(
+        document.getElementById('color-picker'),
+        function(hex, hsv, rgb) {
+          hexStr = hex.toString();
+          rgbStr = "rgb(" + rgb.r + "," + rgb.g + "," + rgb.b + ")";
+          hsvStr = "hsv(" + hsv.h + "," + hsv.s + "," + hsv.v + ")";
+          document.body.style.backgroundColor = hex;
+        });
+
+        var rgbButton = document.getElementById("rgbButton");
+        var hsvButton = document.getElementById("hsvButton");
+        var hexButton = document.getElementById("hexButton");
+
+        rgbButton.onclick=function(){
+          copyStr = rg
+          console.log("rgbClick");
+          console.log(rgbStr);
+        }
+        hexButton.onclick=function(){
+          copyStr = hexStr;
+          console.log("hexClick");
+          console.log(hexStr);
+        }
+        hsvButton.onclick=function(){
+          copyStr = hsvStr;
+          console.log("hsvClick");
+          console.log(hsvStr);
+        }
+
+        document.addEventListener('copy', function(e) {
+          e.clipboardData.setData('text/plain', copyStr);
+          e.preventDefault();
+        });
+
+    </script>
+  </body>
+</html>

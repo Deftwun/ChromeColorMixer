@@ -1,0 +1,11 @@
+
+#buttons{
+  clear:both;
+  position: relative;
+  float:left;
+}
+
+#checkbox{
+  position:relative;
+  clear:both;
+}
