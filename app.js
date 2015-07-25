@@ -16,6 +16,7 @@
         var rgbButton = document.getElementById("rgbButton");
         var hsvButton = document.getElementById("hsvButton");
         var hexButton = document.getElementById("hexButton");
+	var checkBox = document.getElementById("stayOnTopCheck");
 
         rgbButton.onclick=function(){
           copyStr = rgbStr;
@@ -35,7 +36,12 @@
           console.log("hsvClick");
           console.log(hsvStr);
         }
-
+	checkBox.onclick = function(){
+		//Defined in background.js
+		console.log("clicked");
+		setOnTop(checkBox.checked);
+	}
+	
         document.addEventListener('copy', function(e) {
           e.clipboardData.setData('text/plain', copyStr);
           e.preventDefault();
