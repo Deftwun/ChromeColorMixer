@@ -21,24 +21,24 @@
         rgbButton.onclick=function(){
           copyStr = rgbStr;
           document.execCommand('copy');
-          console.log("rgbClick");
-          console.log(rgbStr);
+          //console.log("rgbClick");
+          //console.log(rgbStr);
         }
         hexButton.onclick=function(){
           copyStr = hexStr;
           document.execCommand('copy');
-          console.log("hexClick");
-          console.log(hexStr);
+         //console.log("hexClick");
+        //console.log(hexStr);
         }
         hsvButton.onclick=function(){
           copyStr = hsvStr;
           document.execCommand('copy');
-          console.log("hsvClick");
-          console.log(hsvStr);
+        //console.log("hsvClick");
+         //console.log(hsvStr);
         }
 	checkBox.onclick = function(){
-		//Defined in background.js
-		console.log("clicked");
+		//Defined in background.js 
+		//console.log("clicked");
 		setOnTop(checkBox.checked);
 	}
 	
