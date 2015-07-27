@@ -1,11 +1,48 @@
-
-#buttons{
-  clear:both;
-  position: relative;
-  float:left;
+#container{
+  width:262px;
+  height:330px;
 }
 
-#checkbox{
+#titleBar{
+  -webkit-app-region: drag;
+  background-image:url("assets/menu.png");
+  height:30px;
+}
+
+#titleBarButtons{
+    float:right;
+    -webkit-app-region: no-drag;
+}
+
+#minCloseButtons{
+  float:right;
+}
+
+#closeButton{
+  float:right;
+}
+
+#buttons{
   position:relative;
   clear:both;
+  background-color: #797979;
+  padding-top:6px;
+  margin-left:1px;
+}
+
+#canvas{
+  display:inline;
+  margin:3px;
+  border-style:outset;
+  border-width: 3px;
+}
+
+button{
+  margin-left:3px;
+  width:80px;
+}
+
+body{
+  margin:0;
+  background-color: #797979;
 }

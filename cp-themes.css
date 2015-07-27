@@ -121,15 +121,24 @@
     margin-left: 10px;
 }
 .cp-fancy .picker-indicator {
+    width:8px;
+    height:8px;
+    /*
     width: 24px;
     height: 24px;
-    background-image: url(http://cdn1.iconfinder.com/data/icons/fugue/bonus/icons-24/target.png);
+    /*background-image: url(http://cdn1.iconfinder.com/data/icons/fugue/bonus/icons-24/target.png);*/
+    background-image:url(assets/picker.png);
 }
 .cp-fancy .slide-indicator {
+    width:30px;
+    height:16px;
+    /*
     width: 30px;
     height: 31px;
-    left: 30px;
-    background-image: url(http://cdn1.iconfinder.com/data/icons/bluecoral/Left.png);
+    /*left: 30px;*/
+
+    /*background-image: url(http://cdn1.iconfinder.com/data/icons/bluecoral/Left.png);*/
+    background-image: url(assets/slider.png);
 }
 
 /* Normal skin */

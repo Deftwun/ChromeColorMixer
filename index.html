@@ -1,21 +1,38 @@
 <html>
   <head>
     <script type="text/javascript" src="colorpicker.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="themes.css" />
+    <link rel="stylesheet" type="text/css" href="cp-themes.css" />
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body>
+    <div id="container">
 
-    <div id="color-picker" class="cp-default"></div>
-    <div id="buttons">
-      <button id="rgbButton" type="button">Copy RGB</button>
-      <button id="hexButton" type="button">Copy HEX</button>
-      <button id="hsvButton" type="button">Copy HSV</button>
-    </div>
+      <!--Title Bar & buttons-->
+      <div id="titleBar">
+        <img id="icon" src="assets/icon.png"></img>
+        <div id="titleBarButtons">
+          <img id="pinButton" src="assets/unPinned.png"></img>
+          <div id="minCloseButtons">
+            <img id="minimizeButton" src="assets/minimize.png"></img>
+            <img id="closeButton" src="assets/close.png"></img>
+          </div>
+        </div>
+      </div>
 
-    <div id=checkBox>
-      <input id="stayOnTopCheck" type="checkbox">Stay on top</input>
-    </div>
+      <!--Color Picker-->
+      <div id="color-picker" class="cp-fancy"></div>
+
+      <!--Copy Buttons-->
+      <div id="buttons">
+        <button id="rgbButton">Copy RGB</button>
+        <button id="hexButton">Copy HEX</button>
+        <button id="hsvButton">Copy HSV</button>
+      </div>
+
+      <!--Color Display Canvas-->
+      <canvas id="canvas" width=249px height=40px></canvas>
+
+  </div>
 
     <script type="text/javascript" src="app.js"></script>
   </body>

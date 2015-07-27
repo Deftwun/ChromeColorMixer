@@ -1,0 +1,15 @@
+{
+  "name": "Pick & Paste Color",
+  "description": "A simple color mixer for chrome. Copy the color string with a click of a button. Supports RGB, HEX, & HSV representations.",
+  "version": "0.5",
+  "manifest_version": 2,
+  "app": {
+    "background": {
+      "scripts": ["background.js"]
+    }
+  },
+  "icons": { "16": "assets/icon-16.png", "128": "assets/icon-128.png" },
+"permissions": [
+  "alwaysOnTopWindows"
+]
+}
