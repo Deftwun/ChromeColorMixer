@@ -1,5 +1,6 @@
 
-//Thanks to Salman A
+//Thanks to Salman A for this invert color method
+//http://stackoverflow.com/questions/9600295/automatically-change-text-color-to-assure-readability
 function invertColor(hexTripletColor) {
   var color = hexTripletColor;
   color = color.substring(1);           // remove #
