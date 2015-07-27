@@ -1,4 +1,7 @@
 # Pick & Paste Color
+
+![ScreenShot](/screenshots/simple.png?raw=true)
+
 A simple color mixer tool that lets you select a color and copy the color string to the clipboard. Supports RGB,HSV,and HEX representations. 
 
 Available on the Chrome Web Store:
